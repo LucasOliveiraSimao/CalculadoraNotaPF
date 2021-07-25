@@ -24,11 +24,21 @@ class MainActivity : AppCompatActivity() {
         btnNine.setOnClickListener { addNumbers(btnNine.text.toString()) }
         btnZero.setOnClickListener { addNumbers(btnZero.text.toString()) }
 
+        btnErase.setOnClickListener { erase() }
+
     }
 
     private fun addNumbers(n: String) {
         nota = txtResult.text.toString() + n
         txtResult.text = nota
+    }
+
+    private fun erase() {
+        if (txtResult.text.toString().isNotEmpty()) {
+            nota = txtResult.text.toString()
+            nota = nota.substring(0, nota.length - 1)
+            txtResult.text = nota
+        }
     }
 
 }
