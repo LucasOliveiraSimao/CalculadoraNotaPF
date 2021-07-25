@@ -25,6 +25,7 @@ class MainActivity : AppCompatActivity() {
         btnZero.setOnClickListener { addNumbers(btnZero.text.toString()) }
 
         btnErase.setOnClickListener { erase() }
+        btnAllErase.setOnClickListener { allErase() }
 
     }
 
@@ -39,6 +40,11 @@ class MainActivity : AppCompatActivity() {
             nota = nota.substring(0, nota.length - 1)
             txtResult.text = nota
         }
+    }
+
+    private fun allErase(){
+        txtResult.text = ""
+        txtResult.hint = "ME"
     }
 
 }
