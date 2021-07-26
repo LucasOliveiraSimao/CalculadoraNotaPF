@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">CalcNotaPF</string>
+
+    <string name="msg_parabens">Parabéns</string>
+    <string name="msg_alerta">Alerta</string>
+    <string name="msg_aviso">Aviso</string>
+    <string name="msg_reprovado">Reprovado</string>
+
+    <string name="msg_1">Você está aprovado na disciplina</string>
+    <string name="msg_2">Apenas os alunos com MEE >= 8 está dispensado da Prova Final. O discente que esteja abaixo de 8
+                        não será dispensado de realizar a PF, e caso não faça a Prova Final, não terá nota</string>
+    <string name="msg_3">Infelizmente você não tem nenhuma chance de ser aprovado</string>
 </resources>
